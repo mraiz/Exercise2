@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aplikasi Kalkulator - Abdul Aziz Laia</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+ 	<nav class="navbar navbar-expand-lg navbar-primary bg-dark">
+        <a class="navbar-brand" href="#">Kalkulator Online</a>
+
+       	<form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+       	</form>
+	</nav>
+  	<img src="android1.png" id="img1">
+	<div class="bg">
+			<form name="form">
+				<input class="textview" name="textview">
+			</form>
+		<table>
+			<tr>
+				<td colspan="2"><input type="button" value="AC" onclick="bersih()" style="width: 106px;"></td>
+				<td><input type="button" value="/" onclick="insert('/')"></td>
+				<td><input type="button" value="X" onclick="insert('*')"></td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="7" onclick="insert(7)"></td>
+				<td><input type="button" value="8" onclick="insert(8)"></td>
+				<td><input type="button" value="9" onclick="insert(9)"></td>
+				<td><input type="button" value="-" onclick="insert('-')"></td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="4" onclick="insert(4)"></td>
+				<td><input type="button" value="5" onclick="insert(5)"></td>
+				<td><input type="button" value="6" onclick="insert(6)"></td>
+				<td><input type="button" value="+" onclick="insert('+')"></td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="1" onclick="insert(1)"></td>
+				<td><input type="button" value="2" onclick="insert(2)"></td>
+				<td><input type="button" value="3" onclick="insert(3)"></td>
+				<td rowspan="5"><input type="button" value="=" onclick="hasil()" style="height: 107px;"></td>
+			</tr>
+
+			<tr>
+				<td colspan="2"><input type="button" value="0" onclick="insert(0)" style="width: 108px;"></td>
+				<td><input type="button" value="." onclick="insert('.')"></td>
+			</tr>
+		</table>
+	</div>
+	<img src="android2.png" id="img2">
+
+	<form style="margin-top: 500px;" >
+	<h2>Berikan masukan anda..</h2>
+	  <div class="form-group row">
+	    <label for="staticEmail" class="col-sm-1 col-form-label">Email</label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control" id="staticEmail" value="Email kamu..">
+	    </div>
+	  </div>
+	  <div class="form-group row">
+	    <label for="Feedback" class="col-sm-1 col-form-label">Feedback</label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control" id="Feedback" placeholder="Feedback..">
+	    </div>
+	  </div>
+	  <button type="submit" class="btn btn-primary" onclick="info()">Submit</button>
+	</form>
+</body>
+<script type="text/javascript" src="kalkulator.js"></script>
+</html>
